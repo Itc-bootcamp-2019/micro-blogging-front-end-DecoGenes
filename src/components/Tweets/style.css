@@ -1,0 +1,87 @@
+.textTweet {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #cccccc;
+}
+
+.containerTweet {
+  position: absolute;
+  width: 600px;
+  height: 180px;
+  left: 367px;
+  top: 5px;
+
+  border: 2px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: #282c34;
+  padding-bottom: 120px;
+  padding-left: 20px;
+}
+
+.tweetButton {
+  position: absolute;
+  width: 68px;
+  height: 34px;
+  left: 889px;
+  top: 131px;
+
+  background: #007bff;
+  border-radius: 4px;
+}
+
+.tweetButtonText {
+  position: absolute;
+  width: 53px;
+  height: 29px;
+  left: 897px;
+  top: 133px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.tweetButton:disabled {
+  background-color: gray;
+}
+
+.errorMsgContainer {
+  position: absolute;
+  width: 338px;
+  height: 29px;
+  left: 383px;
+  top: 136px;
+
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.errorMsgText {
+  height: 0px;
+  padding-left: 23px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #721c24;
+}

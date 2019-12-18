@@ -1,0 +1,68 @@
+.tweetTextDisplay {
+  position: relative;
+  width: 455px;
+  height: 32px;
+  left: 387px;
+  top: 253px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #ffffff;
+}
+
+.tweetContainerPlacing {
+  margin-bottom: 10px;
+}
+
+.tweetContainerDisplay {
+  position: relative;
+  width: 600px;
+  height: 100px;
+  left: 367px;
+  top: 205px;
+  margin-bottom: 10px;
+
+  background: #343a40;
+  border-radius: 6px;
+}
+
+.usarName {
+  width: 162px;
+  height: 12px;
+  left: 387px;
+  top: 225px;
+  padding-left: 10px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+
+  color: #6c757d;
+}
+
+.dateStamp {
+  position: absolute;
+  width: 169px;
+  height: 16px;
+  left: 778px;
+  top: 223px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #6c757d;
+}
