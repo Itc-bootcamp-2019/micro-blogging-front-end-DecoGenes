@@ -5,15 +5,15 @@ import './style.css'
 const TweetsList = (props) => {
     return (
         <TweetContext.Consumer>
-            {({ tweets, dateStamp }) => (
+            {({ tweets }) => (
                 tweets.map(tweet => (
                     <div
                         className='tweetContainerDisplay tweetTextDisplay'
                     >
-                        <p className='usarName'>Andre</p>
-                        <p className='dateStamp' key={dateStamp}>{dateStamp}</p>
-                        <p key={tweet}>
-                            {tweet}
+                        <p className='userName'>{tweet.userName}</p>
+                        <p className='dateStamp'>{tweet.date}</p>
+                        <p>
+                            {tweet.content}
                         </p>
                     </div>
                 ))
