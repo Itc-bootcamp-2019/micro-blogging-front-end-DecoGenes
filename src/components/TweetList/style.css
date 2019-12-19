@@ -49,20 +49,14 @@
 }
 
 .dateStamp {
-  position: absolute;
-  width: 169px;
-  height: 16px;
-  left: 778px;
-  top: 223px;
+  position: relative;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  display: flex;
-  align-items: center;
-  text-align: right;
 
+  text-align: right;
   color: #6c757d;
 }
