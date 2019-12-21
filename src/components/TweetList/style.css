@@ -1,10 +1,4 @@
 .tweetTextDisplay {
-  position: relative;
-  width: 455px;
-  height: 32px;
-  left: 387px;
-  top: 253px;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -23,7 +17,7 @@
   width: 600px;
   height: 100px;
   left: 367px;
-  top: 205px;
+  top: 250px;
   margin-bottom: 10px;
 
   background: #343a40;
@@ -49,7 +43,22 @@
 }
 
 .dateStamp {
-  position: relative;
+  position: absolute;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  color: #6c757d;
+  left: 440px;
+  bottom: 66px;
+}
+
+.tweetText {
+  position: absolute;
+  left: 10px;
+  top: 10px;
 
   font-family: Roboto;
   font-style: normal;
@@ -57,6 +66,5 @@
   font-size: 14px;
   line-height: 16px;
 
-  text-align: right;
-  color: #6c757d;
+  color: #ffffff;
 }

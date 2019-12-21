@@ -3,7 +3,7 @@ import React from 'react';
 const TweetContext = React.createContext({
   tweets: [],
   addTweet: (tweet) => { },
-  loading: ''
+  loading: '',
 });
 
 export default TweetContext;

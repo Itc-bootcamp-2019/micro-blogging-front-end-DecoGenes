@@ -11,9 +11,9 @@ const TweetsList = (props) => {
                         className='tweetContainerDisplay tweetTextDisplay'
                         key={tweet.userName + tweet.date}
                     >
-                        <p className='usarName'>{tweet.userName}</p>
+                        <p className='userName'>{tweet.userName}</p>
                         <p className='dateStamp'>{tweet.date}</p>
-                        <p>
+                        <p className='tweetText'>
                             {tweet.content}
                         </p>
                     </div>

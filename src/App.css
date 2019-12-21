@@ -40,7 +40,7 @@
   margin-top: 200px;
 }
 
-.errorMsgContainer {
+.errorMsgServerContainer {
   position: absolute;
   width: 338px;
   height: 29px;
@@ -53,8 +53,8 @@
   border-radius: 4px;
 }
 
-.errorMsgText {
-  height: 0px;
+.errorMsgServerText {
+  height: 20px;
   padding-left: 23px;
 
   font-family: Roboto;
