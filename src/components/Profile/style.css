@@ -1,42 +1,41 @@
+.profileContainer {
+  height: 50vh;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
 .profile {
   position: absolute;
-  width: 103px;
-  height: 42px;
-  left: 369px;
-  top: 110px;
-
+  left: 29%;
+  top: 6%;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 42px;
-
   color: #ffffff;
 }
 
 .userNameLabel {
   position: absolute;
-  width: 90px;
-  height: 21px;
-  left: 368px;
-  top: 178px;
-
+  left: 29%;
+  top: 15%;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
-
   color: rgba(255, 255, 255, 0.8);
 }
 
 .userNameInput {
   position: absolute;
-  width: 600px;
-  height: 61px;
-  left: 367px;
-  top: 205px;
-
+  width: 50%;
+  height: 10%;
+  left: 28%;
+  top: 20%;
   border: 2px solid #cccccc;
   box-sizing: border-box;
   border-radius: 6px;
@@ -46,28 +45,19 @@
   position: absolute;
   width: 68px;
   height: 34px;
-  left: 889px;
-  top: 282px;
+  left: 71%;
+  top: 33%;
 
   background: #007bff;
   border-radius: 4px;
 }
 
-.userNameBtn {
+.userNameBtnText {
   position: absolute;
-  width: 53px;
-  height: 29px;
-  left: 897px;
-  top: 284px;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
   color: #ffffff;
 }

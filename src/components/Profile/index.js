@@ -21,7 +21,7 @@ export default class Profile extends React.Component {
     render() {
         const { userName } = this.state
         return (
-            <div>
+            <div className='profileContainer'>
                 <h1 className='profile'>Profile</h1>
                 <label className='userNameLabel'>User Name</label>
                 <input
@@ -33,7 +33,7 @@ export default class Profile extends React.Component {
                     value={userName}
                 ></input>
                 <button
-                    className='userNameBtn'
+                    className='userNameBtn userNameBtnText'
                     onClick={() => {
                         this.handleUserName(userName);
                     }

@@ -17,13 +17,13 @@
   width: 56%;
   height: 15vh;
   left: 22%;
-  margin-bottom: 10px;
-
+  margin-top: 1%;
   background: #343a40;
   border-radius: 6px;
 }
 
 .userName {
+  position: absolute;
   width: 10%;
   height: 17%;
   padding-left: 10px;
@@ -47,13 +47,13 @@
   text-align: right;
   color: #6c757d;
   right: 2%;
-  bottom: 70%;
+  bottom: 69%;
 }
 
 .tweetText {
   position: absolute;
   left: 1%;
-  top: 10%;
+  top: 20%;
 
   font-family: Roboto;
   font-style: normal;
@@ -62,4 +62,15 @@
   line-height: 16px;
 
   color: #ffffff;
+}
+
+@media only screen and (max-width: 480px) {
+  .userName {
+    top: 10px;
+  }
+
+  .tweetText {
+    top: 40%;
+    left: 5%;
+  }
 }
