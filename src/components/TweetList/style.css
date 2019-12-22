@@ -14,10 +14,9 @@
 
 .tweetContainerDisplay {
   position: relative;
-  width: 600px;
-  height: 100px;
-  left: 367px;
-  top: 250px;
+  width: 56%;
+  height: 15vh;
+  left: 22%;
   margin-bottom: 10px;
 
   background: #343a40;
@@ -25,10 +24,8 @@
 }
 
 .userName {
-  width: 162px;
-  height: 12px;
-  left: 387px;
-  top: 225px;
+  width: 10%;
+  height: 17%;
   padding-left: 10px;
 
   font-family: Roboto;
@@ -37,8 +34,6 @@
   font-size: 14px;
   line-height: 16px;
   display: flex;
-  align-items: center;
-
   color: #6c757d;
 }
 
@@ -51,14 +46,14 @@
   line-height: 16px;
   text-align: right;
   color: #6c757d;
-  left: 440px;
-  bottom: 66px;
+  right: 2%;
+  bottom: 70%;
 }
 
 .tweetText {
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 1%;
+  top: 10%;
 
   font-family: Roboto;
   font-style: normal;

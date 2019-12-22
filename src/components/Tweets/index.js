@@ -20,7 +20,7 @@ export default class Tweets extends React.Component {
         return (
             <TweetContext.Consumer>
                 {({ addTweet }) => (
-                    <div>
+                    <div className='wrappingTextArea'>
                         <textarea
                             name='tweet'
                             className='textTweet containerTweet'

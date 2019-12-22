@@ -68,3 +68,7 @@
 
   color: #721c24;
 }
+
+.tweetListContainer {
+  display: flex;
+}

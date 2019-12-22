@@ -19,10 +19,7 @@ class App extends React.Component {
       isLoading: true,
       error: false,
       errorMsg: '',
-      count: 0,
     };
-
-    this.interval = null;
   }
 
   getListOfTweets() {
@@ -78,14 +75,16 @@ class App extends React.Component {
                 <Navbar />
                 <Route path='/home'>
                   <div>
-                    <Tweets />
-                    {this.state.error && <div className='errorMsgServerContainer errorMsgServerText'>{this.state.errorMsg}</div>}
-                    {this.state.isLoading &&
-                      <img
-                        className='loader'
-                        src='https://i0.wp.com/codemyui.com/wp-content/uploads/2018/02/cheesy-pizza-loader.gif?zoom=1.25&fit=440%2C220&ssl=1'
-                        alt='loading'
-                      />}
+                    <div className='tweetListContainer'>
+                      <Tweets />
+                      {this.state.error && <div className='errorMsgServerContainer errorMsgServerText'>{this.state.errorMsg}</div>}
+                      {this.state.isLoading &&
+                        <img
+                          className='loader'
+                          src='https://i0.wp.com/codemyui.com/wp-content/uploads/2018/02/cheesy-pizza-loader.gif?zoom=1.25&fit=440%2C220&ssl=1'
+                          alt='loading'
+                        />}
+                    </div>
                     <TweetsList />
                   </div>
                 </Route>

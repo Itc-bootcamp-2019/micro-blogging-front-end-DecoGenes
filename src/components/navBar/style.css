@@ -1,21 +1,17 @@
 .navbar {
   position: absolute;
-  width: 1076px;
-  height: 58px;
-  left: 182px;
+  width: 90%;
+  height: 7%;
   top: 0px;
-
   background: #343a40;
   border-radius: 6px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .homeLink {
-  position: absolute;
-  width: 38px;
-  height: 16px;
-  left: 217.87px;
-  top: 19px;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -23,24 +19,17 @@
   line-height: 16px;
   display: flex;
   align-items: center;
-
   color: #ffffff;
+  padding-right: 2%;
 }
 
 .profileLink {
-  position: absolute;
-  width: 41px;
-  height: 16px;
-  left: 300.87px;
-  top: 19px;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   display: flex;
-  align-items: center;
-
+  align-self: center;
   color: rgba(255, 255, 255, 0.5);
 }

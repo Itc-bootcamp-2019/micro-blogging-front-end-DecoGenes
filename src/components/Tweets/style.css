@@ -10,46 +10,30 @@
 
 .containerTweet {
   position: absolute;
-  width: 600px;
-  height: 180px;
-  left: 367px;
-  top: 70px;
+  width: 56%;
+  height: 24vh;
 
   border: 2px solid #cccccc;
   box-sizing: border-box;
   border-radius: 6px;
   background-color: #282c34;
-  padding-bottom: 120px;
-  padding-left: 20px;
 }
 
 .tweetButton {
   position: absolute;
-  width: 68px;
-  height: 34px;
-  left: 889px;
-  
 
   background: #007bff;
   border-radius: 4px;
+  right: 23%;
+  bottom: 3%;
 }
 
 .tweetButtonText {
-  position: absolute;
-  width: 53px;
-  height: 29px;
-  left: 897px;
-  top: 210px;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
   color: #ffffff;
 }
 
@@ -84,4 +68,14 @@
   text-align: center;
 
   color: #721c24;
+}
+
+.wrappingTextArea {
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  height: 34vh;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }
