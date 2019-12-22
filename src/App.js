@@ -19,7 +19,10 @@ class App extends React.Component {
       isLoading: true,
       error: false,
       errorMsg: '',
+      count: 0,
     };
+
+    this.interval = null;
   }
 
   getListOfTweets() {
@@ -38,14 +41,19 @@ class App extends React.Component {
 
   componentDidMount() {
     this.getListOfTweets()
+    setInterval(() => { this.getListOfTweets() }, 1000);
   }
+
+  // componentWillUnmount() {
+  //   clearInterval(this.interval);
+  // }
 
   handleOnTweet(tweet) {
     const newDate = new Date().toISOString()
     const { tweets } = this.state
     const tweetObj = {
       userName: localStorage.getItem('userName'),
-      // content: tweet,
+      content: tweet,
       date: newDate
     }
 

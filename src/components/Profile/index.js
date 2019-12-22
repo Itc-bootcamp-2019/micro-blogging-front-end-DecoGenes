@@ -5,9 +5,6 @@ import "./style.css";
 export default class Profile extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {
-            userName: '',
-        }
     }
 
     handleNameChange(event) {
@@ -15,9 +12,7 @@ export default class Profile extends React.Component {
     }
 
     handleUserName(userName) {
-        console.log(userName)
         localStorage.setItem('userName', userName)
-        this.setState({ userName: '' })
     }
 
     render() {
