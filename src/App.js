@@ -43,11 +43,6 @@ class App extends React.Component {
     this.getListOfTweets()
     setInterval(() => { this.getListOfTweets() }, 1000);
   }
-
-  // componentWillUnmount() {
-  //   clearInterval(this.interval);
-  // }
-
   handleOnTweet(tweet) {
     const newDate = new Date().toISOString()
     const { tweets } = this.state
@@ -56,7 +51,6 @@ class App extends React.Component {
       content: tweet,
       date: newDate
     }
-
     {
       (createTweet(tweetObj).then(() => {
         this.setState(

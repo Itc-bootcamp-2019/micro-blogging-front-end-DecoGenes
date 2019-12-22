@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "micro-blog-itc"
+    "default": "micro-blog-genes",
+    "test": "micro-blog-itc"
   }
 }
