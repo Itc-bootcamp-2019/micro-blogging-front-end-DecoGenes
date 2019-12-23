@@ -42,11 +42,9 @@
 
 .errorMsgServerContainer {
   position: absolute;
-  width: 338px;
-  height: 29px;
-  left: 383px;
-  top: 136px;
-
+  width: 22%;
+  left: 23%;
+  top: 23%;
   background: #f8d7da;
   border: 1px solid #f5c6cb;
   box-sizing: border-box;
@@ -54,15 +52,12 @@
 }
 
 .errorMsgServerText {
-  height: 20px;
-  padding-left: 23px;
+  padding-left: 1%;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   display: flex;
-  align-items: center;
-  text-align: center;
   color: #721c24;
 }

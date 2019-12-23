@@ -44,7 +44,7 @@ class App extends React.Component {
     const newDate = new Date().toISOString()
     const { tweets } = this.state
     const tweetObj = {
-      // userName: localStorage.getItem('userName'),
+      userName: localStorage.getItem('userName'),
       content: tweet,
       date: newDate
     }
