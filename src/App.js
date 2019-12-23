@@ -44,7 +44,7 @@ class App extends React.Component {
     const newDate = new Date().toISOString()
     const { tweets } = this.state
     const tweetObj = {
-      userName: localStorage.getItem('userName'),
+      // userName: localStorage.getItem('userName'),
       content: tweet,
       date: newDate
     }
@@ -54,10 +54,9 @@ class App extends React.Component {
           { tweets: [tweetObj, ...tweets] }
         )
       }).catch((response) => {
-        const errorMsgServer = response.response.data
         this.setState({
           error: true,
-          errorMsg: errorMsgServer
+          errorMsg: `Please insert a user name at profile`
         })
       }
       )

@@ -36,6 +36,7 @@ export default class Profile extends React.Component {
                     className='userNameBtn userNameBtnText'
                     onClick={() => {
                         this.handleUserName(userName);
+                        this.setState({ userName: '' })
                     }
                     }
                 >Save</button>
