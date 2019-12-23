@@ -1,17 +1,3 @@
-.tweetTextDisplay {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-
-  color: #ffffff;
-}
-
-.tweetContainerPlacing {
-  margin-bottom: 10px;
-}
-
 .tweetContainerDisplay {
   position: relative;
   width: 56%;

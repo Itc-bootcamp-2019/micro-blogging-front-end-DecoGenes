@@ -17,8 +17,9 @@ class App extends React.Component {
       addTweet: this.handleOnTweet.bind(this),
       tweet: '',
       isLoading: true,
-      error: false,
-      errorMsg: '',
+      // error: false,
+      // errorMsg: '',
+      userName: 'User',
     };
   }
 
@@ -42,25 +43,20 @@ class App extends React.Component {
   }
   handleOnTweet(tweet) {
     const newDate = new Date().toISOString()
-    const { tweets } = this.state
+    const { tweets, userName } = this.state
     const tweetObj = {
-      userName: localStorage.getItem('userName'),
+      userName: (localStorage.getItem('userName') || userName),
       content: tweet,
       date: newDate
     }
     {
       (createTweet(tweetObj).then(() => {
         this.setState(
-          { tweets: [tweetObj, ...tweets] }
+          {
+            tweets: [tweetObj, ...tweets],
+          }
         )
-      }).catch((response) => {
-        this.setState({
-          error: true,
-          errorMsg: `Please insert a user name at profile`
-        })
-      }
-      )
-      )
+      }))
     }
   }
 
@@ -74,7 +70,7 @@ class App extends React.Component {
                 <Navbar />
                 <Route exact path='/'>
                   <Tweets />
-                  {this.state.error && <div className='errorMsgServerContainer errorMsgServerText'>{this.state.errorMsg}</div>}
+                  {/* {this.state.error && <div className='errorMsgServerContainer errorMsgServerText'>{this.state.errorMsg}</div>} */}
                   {this.state.isLoading &&
                     <img
                       className='loader'

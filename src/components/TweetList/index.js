@@ -8,7 +8,7 @@ const TweetsList = (props) => {
             {({ tweets }) => (
                 tweets.map(tweet => (
                     <div
-                        className='tweetContainerDisplay tweetTextDisplay'
+                        className='tweetContainerDisplay'
                         key={tweet.userName + tweet.date}
                     >
                         <p className='userName'>{tweet.userName}</p>

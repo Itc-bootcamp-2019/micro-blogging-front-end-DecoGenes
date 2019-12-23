@@ -7,6 +7,7 @@ export default class Tweets extends React.Component {
         super(props);
         this.state = {
             tweet: '',
+            isLoading: true
         };
     }
 
