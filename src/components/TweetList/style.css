@@ -1,8 +1,9 @@
 .tweetContainerDisplay {
   position: relative;
   width: 56%;
+  max-width: 600px;
   height: 15vh;
-  left: 22%;
+  left: 30.4%;
   margin-top: 1%;
   background: #343a40;
   border-radius: 6px;

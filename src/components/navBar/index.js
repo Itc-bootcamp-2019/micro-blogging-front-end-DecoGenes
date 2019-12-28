@@ -5,7 +5,7 @@ import './style.css';
 export default function Navbar() {
     return (
         <nav className='navbar'>
-            <Link to='/' className='homeLink'>Home</Link>
+            <Link to='/home' className='homeLink'>Home</Link>
             <Link to='/profile' className='profileLink'>Profile</Link>
         </nav>
     )

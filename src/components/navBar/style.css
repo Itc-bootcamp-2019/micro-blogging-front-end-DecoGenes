@@ -1,6 +1,7 @@
 .navbar {
   position: absolute;
   z-index: 1;
+  max-width: 1076px;
   width: 90%;
   height: 7%;
   top: 0px;
@@ -8,7 +9,6 @@
   border-radius: 6px;
   align-self: center;
   display: flex;
-  justify-content: center;
   align-content: center;
 }
 
@@ -21,7 +21,9 @@
   display: flex;
   align-self: center;
   color: #ffffff;
-  padding-right: 2%;
+  padding-right: 4%;
+  padding-left: 6%;
+  text-decoration: none;
 }
 
 .profileLink {
@@ -33,4 +35,5 @@
   display: flex;
   align-self: center;
   color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
 }

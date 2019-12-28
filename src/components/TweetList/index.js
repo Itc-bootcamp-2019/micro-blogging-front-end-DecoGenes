@@ -1,5 +1,5 @@
 import React from 'react';
-import TweetContext from "../context/TweetContext";
+import TweetContext from "../../context/TweetContext";
 import './style.css'
 
 const TweetsList = (props) => {

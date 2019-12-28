@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
-import TweetContext from "./components/context/TweetContext";
 import Tweets from './components/Tweets/index';
 import TweetsList from './components/TweetList/index';
 import { getTweetsList, createTweet } from "./lib/api";
 import Navbar from './components/navBar';
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import Profile from './components/Profile';
+import SignInScreen from "./components/SingUp";
+import TweetContext from "./context/TweetContext";
+import firebase from "./firebase";
 
 
 class App extends React.Component {
@@ -17,47 +19,51 @@ class App extends React.Component {
       addTweet: this.handleOnTweet.bind(this),
       tweet: '',
       isLoading: true,
-      // error: false,
-      // errorMsg: '',
       userName: 'User',
+      isLoggedIn: false,
     };
   }
 
   getListOfTweets() {
-    getTweetsList().then(response => {
-      this.setState({
-        tweets: response.data.tweets, isLoading: false
-      })
-    }).catch((response) => {
-      const errorMsgServer = response.response.data
-      this.setState({
-        error: true,
-        errorMsg: errorMsgServer
-      })
-    })
+    const db = firebase.firestore()
+    const tweets = db.collection('tweets')
+    let arr = []
+    tweets.get().then((tweet) => {
+      tweet.docs.forEach(
+        (response) => {
+          arr.push(response.data())
+          this.setState({
+            tweets: arr, isLoading: false
+          })
+        }
+      )
+    }
+    )
   }
 
   componentDidMount() {
     this.getListOfTweets()
-    setInterval(() => { this.getListOfTweets() }, 1000);
   }
   handleOnTweet(tweet) {
     const newDate = new Date().toISOString()
     const { tweets, userName } = this.state
+    const db = firebase.firestore()
     const tweetObj = {
       userName: (localStorage.getItem('userName') || userName),
       content: tweet,
       date: newDate
     }
-    {
-      (createTweet(tweetObj).then(() => {
-        this.setState(
-          {
-            tweets: [tweetObj, ...tweets],
-          }
-        )
-      }))
-    }
+    db.collection('tweets').add({
+      userName: (localStorage.getItem('userName') || userName),
+      content: tweet,
+      date: newDate
+    });
+    (this.setState(
+      {
+        tweets: [tweetObj, ...tweets],
+      }
+    ))
+
   }
 
   render() {
@@ -68,9 +74,9 @@ class App extends React.Component {
             <Switch>
               <TweetContext.Provider value={this.state}>
                 <Navbar />
-                <Route exact path='/'>
+                <SignInScreen exact path='/' />
+                <Route path='/home'>
                   <Tweets />
-                  {/* {this.state.error && <div className='errorMsgServerContainer errorMsgServerText'>{this.state.errorMsg}</div>} */}
                   {this.state.isLoading &&
                     <img
                       className='loader'

@@ -1,0 +1,8 @@
+.signInPage {
+  margin-top: 10%;
+}
+
+.signOutButtonPositioning {
+  z-index: 2;
+  margin-left: 80%;
+}
